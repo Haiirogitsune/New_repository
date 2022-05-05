@@ -1,0 +1,44 @@
+$body_margin: 12.5vw;
+
+.beach{
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  margin-left: $body_margin; margin-right: $body_margin;
+  margin-top: 10em;  margin-bottom: 7em;
+  &-column{
+    flex: 1;
+    & > p{
+      font-size: 2em;
+      margin-top: 0.5em;  margin-bottom: 0.5em;
+    }
+    & > ul{
+      list-style-type: none;
+      margin-top: 2em;  margin-bottom: 2em;
+    }
+    & > ul > li{
+      display: inline-flex;
+      justify-content: center;
+      width: 90%;
+    }
+    & > ul > li > p{
+      font-size: 2em;
+      flex: 2;
+      margin-top: 0.7em;  //margin-bottom: 0.5em;*/
+      padding-left: 2em;
+    }
+    & > ul > li > img{
+      width: 10%;
+      flex: 0.5;
+    }
+    & > img{
+      width: 110%;
+    }
+  }
+}
+
+@media /*(min-width: 860px) and */(max-width: 1000px){
+  .beach{
+    flex-direction: column;
+  }
+}

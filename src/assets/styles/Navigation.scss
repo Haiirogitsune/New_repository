@@ -1,0 +1,127 @@
+$body_margin: 5vw;
+
+nav{  
+  display: flex;
+  justify-content: center;
+  //align-content: space-between;
+  width: 90vw;
+  margin-top: 2.5em; margin-bottom: 2.5em;
+  margin-left: $body_margin; margin-right: $body_margin;
+  font-size: 1.3em;
+  
+  //background-color: aqua;
+  > p{
+    flex: 3;
+    padding-top: 0.4em; padding-bottom: 0.4em;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+  > a{
+    //flex: 1;
+    padding-top: 0.7em; padding-bottom: 0.7em;
+    padding-left: 1.2em; padding-right: 1.2em;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+  }
+  > div{
+    flex: 0.8;
+    text-align: right;
+  }
+  > div > button{
+    text-align: left;
+    padding-left: 0.8em;    padding-right: 0.8em;
+    padding-top: 0.2em;    padding-bottom: 0.2em;
+    background-color: #fff;
+    border: black solid 2px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+}  
+@media (min-width: 860px) and (max-width: 1000px){
+  nav{  
+    display: flex;
+    justify-content: center;
+    //align-content: space-between;
+    width: 95%;
+    margin-top: 2.5em; margin-bottom: 2.5em;
+    margin-left: 2vw; margin-right: 2vw;
+    font-size: 1.3em;
+    
+    //background-color: aqua;
+    > p{
+      flex: 3;
+      padding-top: 0.4em; padding-bottom: 0.4em;
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+    > a{
+      //flex: 1;
+      padding-top: 0.7em; padding-bottom: 0.7em;
+      padding-left: 1.2em; padding-right: 1.2em;
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+    }
+    > div{
+      flex: 0.8;
+      text-align: right;
+    }
+    > div > button{
+      text-align: left;
+      padding-left: 0.8em;    padding-right: 0.8em;
+      padding-top: 0.2em;    padding-bottom: 0.2em;
+      background-color: #fff;
+      border: black solid 2px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+  }  
+}
+@media /*(min-width: 992px) and */(max-width: 860px){
+  nav{  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    //align-content: space-between;
+    width: 100%;
+    margin-top: 2.5em; margin-bottom: 2.5em;
+    //margin-left: 2vw; margin-right: 1.2vw;
+    font-size: 1.3em;
+    text-align: center;
+    //background-color: aqua;
+    > p{
+      //flex: 3;
+      padding-top: 0.4em; padding-bottom: 0.4em;
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+    > a{
+      //flex: 1;
+      padding-top: 0.7em; padding-bottom: 0.7em;
+      padding-left: 1.2em; padding-right: 1.2em;
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+    }
+    > div{
+      //flex: 0.8;
+      text-align: center;
+    }
+    > div > button{
+      //text-align: left;
+      padding-left: 0.8em;    padding-right: 0.8em;
+      padding-top: 0.2em;    padding-bottom: 0.2em;
+      background-color: #fff;
+      border: black solid 2px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+  }  
+}

@@ -1,0 +1,159 @@
+$body_margin: 5vw;
+
+.banner{
+  width: 90vw;
+  margin-left: $body_margin; margin-right: $body_margin;
+  margin-bottom: 30vh;
+  &-img{
+    position: absolute;
+    overflow: hidden;
+    width: 90vw;  height: 85vh;
+    z-index: 0;
+    border-radius: 10px;
+    & > img{
+      position: relative;
+      border-radius: 10px;
+      top: 18%;
+      left: 20%;
+      transform: translate(-20%,-20%);
+      width: 90vw;  height: 80vh;
+      object-fit: fill;
+      z-index: 1;
+    }
+  }
+  &-content{
+    position: relative;
+    z-index: 2;
+    height: 55vh;
+    padding: 7%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #B3E8BE 21.27%, rgba(227, 227, 227, 0) 86.66%);
+  }
+  &-text{
+    padding-bottom: 20vh;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  /*& > h1{
+    position: relative;
+    z-index: 3;
+  }*/
+  & > p{
+    /*position: relative;
+    z-index: 3;*/
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+    
+  &-menu{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    z-index: 4;
+    width: 70vw;
+    padding-left: 3%;   padding-right: 3%;
+    padding-top: 1.5em;    padding-bottom: 1.5em;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: -22px 23px 25px rgba(191, 191, 191, 0.25), 22px 22px 25px rgba(191, 191, 191, 0.25);
+  }
+  &-Facilities{
+    flex: 1.3;
+    & > div{
+      display: inline-block;
+      width: 20%;
+      text-align: center;
+      margin-left: 2%;   margin-right: 2%;
+    }
+    & > h1{
+      display: inline-block;
+      width: 48%;
+    }
+    & > a{
+      display: inline-block;
+      width: 45%;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #FF8A00;
+      text-align: right;
+      text-decoration: none;
+    }
+    & > div > p{
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+  }
+  &-Hotels-for-you{
+    flex: 0.7;
+    text-align: center;
+    & > p{
+      font-size: 1.2em;
+      color: #A0A0A0;
+      margin-top: 1.5em;  margin-bottom: 1.5em;
+    }
+    & > button{
+      display: inline-flex;
+      justify-content: center;
+      width: 55%;
+      min-width: 150px;
+      border-radius: 10px;
+      background-color: #0500FF;
+      font-size: 1.2em;
+      color: #FFF;
+      font-weight: bold;
+      padding-left: 1.5em;  padding-right: 1.5em;
+      padding-top: 0.2em;  padding-bottom: 0.2em;
+      & > img{
+        width: 40%;
+        padding-top: 0.2em;  padding-bottom: 0.2em;
+        padding-left: 0.6em;  padding-right: 0.7em;
+      }
+      & > p{
+        //flex: 1.5;
+        padding-top: 0.5em;  padding-bottom: 0.5em;
+      }
+    }
+  }
+  &-Search{
+    flex: 1;
+    & > form{
+      border-radius: 20px;
+      padding-left: 5%;   padding-right: 5%;
+      padding-top: 2%;    padding-bottom: 2%;
+      margin-top: 5%;  margin-bottom: 5%;
+      width: 80%;
+      box-shadow: 0px 4px 4px 0px #00000040;
+      & > input{
+        font-size: 1.5em;
+        width: 90%;
+      }
+      & > img{
+        display: inline;
+        height: 20px;  width: 20px;
+      }
+    }
+    & > img{
+      display: inline;
+      height: 20%;  width: 20%;
+      margin: 5%;
+    }
+  }
+}
+.facilities-img{
+  border-radius: 20px;
+  margin-top: 15%;  margin-bottom: 10%;
+  height: 80%;    width: 80%;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+@media /*(min-width: 860px) and */(max-width: 1000px){
+  .banner{
+    &-menu{
+      flex-direction: column;
+    }
+    &-Facilities, &-Hotels-for-you, &-Search{
+      margin-top: 1.5em;  margin-bottom: 1.5em;
+    }
+  }
+}
