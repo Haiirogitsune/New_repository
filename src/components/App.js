@@ -1,3 +1,4 @@
+import Provider from './Provider.jsx'
 import {Link} from "react-router-dom";
 import {FacilitiesButton} from './FacilitiesButton.jsx';
 import {Card} from './Card.jsx';
@@ -70,14 +71,7 @@ function App() {
       <header className="App-header"></header>
     </div>*/
     <body>
-      <nav>
-        <p>SajidStudio</p>
-        <Link to="/home">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/type">Type of house</Link>
-        <Link to="/contact">Contact</Link>
-        <div><button>Login</button></div>
-      </nav>
+      <Provider/>
 
       <div className='banner'>
         <div className='banner-img'>
@@ -300,5 +294,13 @@ function App() {
                 <img src={cardInfo}/>
               </div>
             </div>
+    <nav>
+      <p>SajidStudio</p>
+      <Link to="/home">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/type">Type of house</Link>
+      <Link to="/contact">Contact</Link>
+      <div><button>Login</button></div>
+  </nav>        
 */
 export default App;
