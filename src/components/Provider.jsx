@@ -14,26 +14,24 @@ const Provider = () => {
     }, []);
 
     return(
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<App />} />
-                <Route index path="/tours" element={
-                    <div>
-                        <Header/>
-                        <Tours tours={tours}/>
-                    </div>} 
-                />
-                <Route index path="/tours-id" element={
-                    <div>
-                        <Header/>
-                        <ToursDetail tours={tours}/>
-                    </div>}
-                />
-                <Route index path="/home" element={<Header/>} />
-                <Route index path="/about" element={<Header/>} />
-                <Route index path="/contact" element={<Header/>} />
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+            <Route path="/" element={<App />} />
+            <Route index path="/tours" element={
+                <div>
+                    <Header/>
+                    <Tours tours={tours}/>
+                </div>} 
+            />
+            <Route index path="/tours/:id" element={
+                <div>
+                    <Header/>
+                    <ToursDetail tours={tours}/>
+                </div>}
+            />
+            <Route index path="/home" element={<Header/>} />
+            <Route index path="/about" element={<Header/>} />
+            <Route index path="/contact" element={<Header/>} />
+        </Routes>
     );
 }
 

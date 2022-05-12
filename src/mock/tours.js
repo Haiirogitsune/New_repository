@@ -12,8 +12,8 @@ export const data =[
         ]
     },
     {
-        id: "1",
-        name: "Hurgada",
+        id: "2",
+        name: "Hurgada2",
         price: 3000,
         descriptions: "Lorem ipsum dolor",
         pets: false,
@@ -24,8 +24,8 @@ export const data =[
         ]
     },
     {
-        id: "1",
-        name: "Hurgada",
+        id: "3",
+        name: "Hurgada3",
         price: 3000,
         descriptions: "Lorem ipsum dolor",
         pets: false,

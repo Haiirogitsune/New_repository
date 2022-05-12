@@ -13,4 +13,4 @@ const ToursDetail = (tours) =>{
     );
 }
 
-export default ToursDetail
+export default ToursDetail;

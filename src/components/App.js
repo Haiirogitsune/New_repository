@@ -44,6 +44,7 @@ import '../assets/styles/Beach.scss';
 import '../assets/styles/Relaxing.scss';
 import '../assets/styles/Airline.scss';
 import '../assets/styles/Footer.scss';
+import Header from './Header.jsx';
 
 /*const FacilButton = () => {
   const Button =[
@@ -71,7 +72,7 @@ function App() {
       <header className="App-header"></header>
     </div>*/
     <body>
-      <Provider/>
+      <Header />
 
       <div className='banner'>
         <div className='banner-img'>
