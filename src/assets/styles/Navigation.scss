@@ -1,11 +1,16 @@
 $body_margin: 5vw;
+@mixin flexcenter($direction) {
+  display: flex;
+  align-items: center;
+  flex-direction: $direction;
+}
 
 nav{  
   display: flex;
   justify-content: center;
   //align-content: space-between;
   width: 90vw;
-  margin-top: 2.5em; margin-bottom: 2.5em;
+  margin-top: 2.5em; margin-bottom: 1.5em;
   margin-left: $body_margin; margin-right: $body_margin;
   font-size: 1.3em;
   
@@ -38,8 +43,33 @@ nav{
     border-radius: 10px;
     font-weight: bold;
     font-size: 1.3em;
+    transition: .3s;
   }
-}  
+  > div > button:hover{
+    transform: scale(0.9);
+  }
+} 
+.modal{
+  &-input{
+    border-radius: 10px;
+    padding-left: 2%;   padding-right: 2%;
+    padding-top: 0.5em;   padding-bottom: 0.5em;
+    margin-top: 1.5em;  margin-bottom: 1.5em;
+    margin: 5px;
+    box-shadow: 0px 0px 4px 0px #00000040;
+    font-size: 1.2em;
+  }
+  &-button{
+    border-radius: 10px;
+    background-color: #273BF4;
+    font-size: 1.2em;
+    color: #FFF;
+    padding-left: 1em;  padding-right: 1em;
+    padding-top: 0.5em;  padding-bottom: 0.5em;
+    margin: 5px;
+  }
+} 
+
 @media (min-width: 860px) and (max-width: 1000px){
   nav{  
     display: flex;
@@ -79,6 +109,9 @@ nav{
       border-radius: 10px;
       font-weight: bold;
       font-size: 1.3em;
+    }
+    > div > button:hover{
+      transform: scale(0.9);
     }
   }  
 }
